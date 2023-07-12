@@ -21,7 +21,7 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === null;
@@ -133,6 +133,34 @@ function esPositivo(numero) {
   // Si el número es negativo, devolver ---> "Es negativo"
   // Si el número es 0, devuelve false
   // Tu código:
+  // var tipoDeNumero;
+  // var texto;
+  // tipoDeNumero = Math.sign(numero);
+  // switch (tipoDeNumero) {
+  //   case 1:
+  //     texto = "Es positivo";
+  //     break;
+  //   case -1:
+  //     texto = "Es negativo";
+  //     break;
+  //   case 0:
+  //     texto = false;
+  //     break;
+  //   default:
+  //     texto = false;
+  //     break;
+  // }
+  // return (texto);
+
+  // if (numero > 0) {
+  //   return 'Es positivo'
+  // } else if (numero < 0) {
+  //   return 'Es negativo'
+  // } else if (numero === 0) {
+  //   return false;
+  // }
+
+  return numero > 0 ? 'Es positivo' : numero < 0 ? 'Es negativo' : false;
 }
 
 function agregarSimboloExclamacion(str) {
