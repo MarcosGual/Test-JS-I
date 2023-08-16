@@ -7,6 +7,8 @@ function counter() {
   // ejemplo: const newCounter = counter();
   // newCounter(); // 1
   // newCounter(); // 2
+  let contador = 0;
+  return () => ++contador;
 }
 
 function cacheFunction(cb) {
