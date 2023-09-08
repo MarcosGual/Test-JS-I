@@ -57,6 +57,10 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+
+  if (usuario['email']) return true;
+
+  return false;
 }
 
 
@@ -66,6 +70,11 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  // return objeto[propiedad]!==undefined;
+
+  if (objeto[propiedad] !== undefined) return true;
+
+  return false;
 }
 
 function verificarPassword(usuario, password) {
@@ -94,6 +103,11 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  // usuarios.forEach(usuario => usuario.esPremium = true)
+  for(let i=0; i<usuarios.length; i++){
+    usuarios[i].esPremium = true;
+  }
+  return usuarios;
 }
 
 function sumarLikesDeUsuario(usuario) {
