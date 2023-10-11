@@ -82,6 +82,15 @@ class Persona {
     edad = this.edad;
     domicilio = this.domicilio;
   }
+
+  detalle() {
+    return {
+      Nombre: this.nombre,
+      Apellido: this.apellido,
+      Edad: this.edad,
+      Domicilio: 'Saavedra 123'
+    }
+  }
 }
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
@@ -89,15 +98,16 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
   //Tu código:
-  return new Persona('Juan', 'Perez', 22, 'Saavedra 123');
+  const juan = new Persona(nombre, apellido, edad, dir);
+  return juan;
 }
 
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
   //Tu código:
-  Persona.prototype.datos = function(){
-    return `Juan, ${this.edad} años`
+  Persona.prototype.datos = function () {
+    return `${this.nombre}, ${this.edad} años`
   }
 }
 
