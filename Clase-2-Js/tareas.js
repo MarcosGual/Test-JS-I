@@ -12,10 +12,10 @@
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 10;
+const nuevoNum = 100;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === null;
@@ -38,8 +38,8 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var suma = x-y;
-  return suma;
+  var resultado = x-y;
+  return resultado;
 }
 
 function resta(x, y) {
@@ -136,34 +136,6 @@ function esPositivo(numero) {
   // Si el número es negativo, devolver ---> "Es negativo"
   // Si el número es 0, devuelve false
   // Tu código:
-  // var tipoDeNumero;
-  // var texto;
-  // tipoDeNumero = Math.sign(numero);
-  // switch (tipoDeNumero) {
-  //   case 1:
-  //     texto = "Es positivo";
-  //     break;
-  //   case -1:
-  //     texto = "Es negativo";
-  //     break;
-  //   case 0:
-  //     texto = false;
-  //     break;
-  //   default:
-  //     texto = false;
-  //     break;
-  // }
-  // return (texto);
-
-  // if (numero > 0) {
-  //   return 'Es positivo'
-  // } else if (numero < 0) {
-  //   return 'Es negativo'
-  // } else if (numero === 0) {
-  //   return false;
-  // }
-
-  return numero > 0 ? 'Es positivo' : numero < 0 ? 'Es negativo' : false;
 }
 
 function agregarSimboloExclamacion(str) {
